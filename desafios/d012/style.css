@@ -5,22 +5,24 @@
 :root {
     --fonte-titulo: 'Passion One', cursive;
     --fonte-corpo: 'Sriracha', cursive;
+    --font-padrao: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 * {
     margin: 0;
     padding: 0;
+    font-size: 1em;
 }
 
 html,
 body {
     min-height: 100vh;
     background-color: darkgrey;
+    font-family: var(--font-padrao);
 }
 
 header {
     background-color: black;
-    font-family: var(--fonte-titulo);
     color: white;
     text-align: center;
 }
@@ -28,6 +30,8 @@ header {
 header>h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte-titulo);
+    font-size: 10vw;
 }
 
 header>p {
@@ -46,15 +50,13 @@ footer a:hover {
     text-decoration: underline;
 }
 
-main {
-    font-family: var(--fonte-corpo);
-}
-
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte-corpo);
+    font-size: 3vw;
 }
 
 section.sem-fundo {
@@ -68,7 +70,8 @@ section.com-fundo {
 }
 
 section.com-fundo>p {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.250);
 }
 
