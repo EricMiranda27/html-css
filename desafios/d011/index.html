@@ -6,22 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 011</title>
     <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             background-image: url('espaco.jpg');
             background-repeat: no-repeat;
-            background-size: 100%;
+            background-size: cover;
+            background-position: center center;
             background-color: black;
         }
 
         .astronauta {
-            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
     </style>
 </head>
 
 <body>
-    <div class="astrounauta">
-        <img src="astronauta.png" alt="imagem astrounauta">
+    <div class="astronauta">
+        <img src="astronauta.png" alt="astronauta">
     </div>
 </body>
 
