@@ -79,6 +79,8 @@ section.com-fundo {
 section.com-fundo>p {
     display: inline-block;
     padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     background-color: rgba(0, 0, 0, 0.5);
     text-shadow: 1px 1px 0px black;
     border-radius: 10px;
