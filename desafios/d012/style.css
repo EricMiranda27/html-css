@@ -59,6 +59,10 @@ section {
     font-size: 3vw;
 }
 
+section>p {
+    padding-bottom: 2em;
+}
+
 section.sem-fundo {
     background-color: white;
     color: black;
@@ -66,13 +70,27 @@ section.sem-fundo {
 
 section.com-fundo {
     background-color: rgb(51, 51, 51);
+    background-size: cover;
+    background-attachment: fixed;
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.5);
 }
 
 section.com-fundo>p {
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.250);
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 0px black;
+    border-radius: 10px;
+}
+
+section#fundo01 {
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#fundo02 {
+    background-image: url('imagens/background002.jpg');
 }
 
 footer {
